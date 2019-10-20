@@ -4,7 +4,9 @@ package TowerDefense.Entity.Enemy;
 import javafx.scene.image.Image;
 
 public class TankerEnemy extends Enemy {
-    public TankerEnemy(double x, double y, double health, double reward, double speed, double armor, Image img) {
-        super(x, y, health, reward, speed, armor, img);
+    public static final String IMAGE_URL = "";
+    public static final Image NormalEnemyImage = new Image(IMAGE_URL);
+    public TankerEnemy(double x, double y) {
+        super(x, y, 5, 1, 1,0, NormalEnemyImage);
     }
 }
