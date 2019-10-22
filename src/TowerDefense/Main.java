@@ -22,7 +22,6 @@ public class Main extends Application {
         GameStage gameStage=new GameStage();
         Pane root = new Pane();
         Image image = new Image("file:img/background.png");
-        //ImageView imageView2 = new ImageView(image);/*gameStage.getGameField().getMountain().getMountainImage()*/
         ImageView imageView2 = new ImageView(gameStage.getGameField().getMountain().getMountainImage());
         root.getChildren().addAll(imageView2);
 

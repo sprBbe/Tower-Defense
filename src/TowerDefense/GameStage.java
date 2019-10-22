@@ -1,8 +1,11 @@
 package TowerDefense;
 
+import javafx.scene.control.ProgressBar;
+
 public class GameStage {
     private GameField gameField;
     private double money;
+    private ProgressBar showEnemyLives = new ProgressBar();
 
     public GameStage(){
         this.money=50;
