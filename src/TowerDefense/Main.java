@@ -1,6 +1,7 @@
 package TowerDefense;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -19,13 +20,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        GameStage gameStage=new GameStage();
+        /*GameStage gameStage=new GameStage();
         Pane root = new Pane();
         Image image = new Image("file:img/background.png");
         ImageView imageView2 = new ImageView(gameStage.getGameField().getMountain().getMountainImage());
-        root.getChildren().addAll(imageView2);
+        root.getChildren().addAll(imageView2);*/
 
-        //Parent root = FXMLLoader.load(getClass().getResource("TowerDefense.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("TowerDefense.fxml"));
         primaryStage.setTitle(Config.GAME_NAME);
         primaryStage.setScene(new Scene(root, Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT));
         primaryStage.show();
