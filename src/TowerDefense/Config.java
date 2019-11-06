@@ -2,7 +2,7 @@ package TowerDefense;
 
 public final class Config {
     //Name of Game
-    public static final String GAME_NAME = "Tower Defense";
+    public static final String GAME_NAME = "Tower Defense made by BBe and BCC";
 
     //Size of the tile, in pixel.
     public static final double TILE_SIZE = 64;
