@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bbe add!!!">
+      <change afterPath="$PROJECT_DIR$/img/rscimg/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/rscimg/background.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Mountain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/MachineGunTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/MachineGunTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/NormalTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/NormalTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/SniperTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tile/Tower/SniperTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/TowerDefense.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/TowerDefense.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Mountain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/MachineGunTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/MachineGunTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/NormalTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/NormalTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/SniperTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Tile/Tower/SniperTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TowerDefense/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TowerDefense/TowerDefense.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/TowerDefense.fxml" afterDir="false" />
     </list>
@@ -91,7 +111,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -101,11 +121,14 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/jhonnold/tower-defense-v2.git" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\MyGame\src\TowerDefense\Shop" />
+      <recent name="D:\GitHub\MyGame\img" />
+      <recent name="D:\GitHub\MyGame\src\TowerDefense\Menu" />
+      <recent name="D:\GitHub\MyGame\src\TowerDefense" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Code Java\MyGame\src\TowerDefense" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\MyGame\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -211,7 +234,20 @@
       <workItem from="1571564777758" duration="18823000" />
       <workItem from="1571666576282" duration="2085000" />
       <workItem from="1571728343167" duration="1100000" />
-      <workItem from="1571732904098" duration="2816000" />
+      <workItem from="1571732904098" duration="3280000" />
+      <workItem from="1571753874409" duration="2062000" />
+      <workItem from="1571928300824" duration="543000" />
+      <workItem from="1571928995635" duration="995000" />
+      <workItem from="1572329274211" duration="198000" />
+      <workItem from="1572336702520" duration="612000" />
+      <workItem from="1572340823646" duration="146000" />
+      <workItem from="1572540610609" duration="39000" />
+      <workItem from="1572617581114" duration="654000" />
+      <workItem from="1572618975623" duration="1809000" />
+      <workItem from="1572666548853" duration="19331000" />
+      <workItem from="1572747440652" duration="14889000" />
+      <workItem from="1572790952793" duration="3604000" />
+      <workItem from="1572961523305" duration="7349000" />
     </task>
     <task id="LOCAL-00001" summary="Bbe add!!!">
       <created>1571547240870</created>
@@ -234,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571592694685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bbe add!!!">
+      <created>1571736854619</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571736854619</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
