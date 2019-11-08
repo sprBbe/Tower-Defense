@@ -1,17 +1,21 @@
 package TowerDefense;
 
+import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.Tile.Tower.Tower;
+import javafx.event.ActionEvent;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+
+import java.util.Iterator;
 
 public class GameStage extends Canvas {
     private GameField gameField;
     private double money;
-    private ProgressBar showEnemyLives = new ProgressBar();
     private Image[] gridSet;
     private Tower selectedTower;
     private Button levelButton;
@@ -37,6 +41,17 @@ public class GameStage extends Canvas {
             { 0, 0, 0, 4, 2, 0, 0, 4, 9, 3, 3, 7, 0, 0, 0, 0 }, { 0, 0, 0, 4, 2, 0, 0, 4, 2, 0, 0, 0, 0, 0, 0, 0 },
             { 1, 1, 1, 11, 2, 0, 0, 4, 2, 0, 0, 0, 0, 0, 0, 0 }, { 3, 3, 3, 3, 7, 0, 0, 4, 12, 1, 1, 1, 1, 1, 1, 1 },
             { 0, 0, 0, 0, 0, 0, 0, 8, 3, 3, 3, 3, 3, 3, 3, 3 } };
+
+    private final char[][] route = new char[][] {
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'E', 'X', 'X', 'X', 'X', 'X', 'X', 'S', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'S', 'X', 'X', 'W', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'E', 'X', 'X', 'N', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
+            { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'E', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
 
     public GameField getGameField() {
         return gameField;
@@ -83,5 +98,36 @@ public class GameStage extends Canvas {
             }
         }
         // -------------------
+        // DRAW TOWERS
+        synchronized (gameField.getTowers()) {
+            for (Tower temp : gameField.getTowers()) {
+                temp.draw(gc);
+            }
+        }
+
+
+        gc.fillText("Money: " + money, 100, 100);
+    }
+
+    public void update() {
+        synchronized (gameField.getEnemies()) {
+            Iterator<Enemy> eIterator = gameField.getEnemies().iterator();
+
+            while (eIterator.hasNext()) {
+                Enemy e = eIterator.next();
+
+                if (e.isDead()) {
+                    eIterator.remove();
+                    money += e.getReward();
+                    e = null;
+                    continue;
+                }
+
+                e.move(route);
+            }
+        }
+        for (Tower t : gameField.getTowers()) {
+
+        }
     }
 }

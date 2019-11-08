@@ -1,5 +1,7 @@
 package TowerDefense.Entity;
 
+import javafx.scene.canvas.GraphicsContext;
+
 public abstract class GameEntity {
     private double x, y;
 
@@ -37,4 +39,4 @@ public abstract class GameEntity {
 
         return Math.sqrt(dx * dx + dy * dy);
     }
-}
+    public abstract void draw(GraphicsContext gc);}

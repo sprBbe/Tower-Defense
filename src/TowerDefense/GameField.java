@@ -5,6 +5,8 @@ import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.Tile.Road.Road;
 import TowerDefense.Entity.Tile.Tower.Tower;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class GameField {
@@ -16,5 +18,23 @@ public class GameField {
 
     public GameField(){
         this.road=new Road();
+        towers = Collections.synchronizedList(new ArrayList<>());
+        enemies = Collections.synchronizedList(new ArrayList<>());
+        bullets = Collections.synchronizedList(new ArrayList<>());
+    }
+
+    public List<Bullet> getBullets() {
+        return bullets;
+    }
+
+    public List<Enemy> getEnemies() {
+        return enemies;
+    }
+
+    public List<Tower> getTowers() {
+        return towers;
+    }
+    public void addEnemy(Enemy simpleEnemy) {
+        enemies.add(simpleEnemy);
     }
 }

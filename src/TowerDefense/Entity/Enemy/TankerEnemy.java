@@ -1,13 +1,18 @@
 package TowerDefense.Entity.Enemy;
 
 
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
 import java.io.FileInputStream;
 
 public class TankerEnemy extends Enemy {
-    public static final Image TankerEnemyImage = new Image("file:img/background.png");
-    public TankerEnemy(double x, double y) {
-        super(x, y, 5, 1, 1,0, TankerEnemyImage);
+    public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile247.png";
+
+    public TankerEnemy(int x, int y) {
+        super(x, y, 25, .5);
+        img = new Image(IMAGE_URL);
+        setDir('E');
+        reward = 3;
     }
 }

@@ -6,25 +6,15 @@ import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.layout.Pane;
 import javafx.util.Duration;
-import java.io.FileInputStream;
-import java.io.IOException;
 
-
-public class Main extends Application implements Runnable {
+public class Main extends Application implements Runnable{
     private Stage primary;
     private FXMLLoader fxmlLoader;
     private GameStage gameStage;
@@ -85,7 +75,10 @@ public class Main extends Application implements Runnable {
 
     @Override
     public void run() {
-
+        running = true;
+        while (running == true){
+            gameStage.update();
+        }
     }
 
     private void startGame() {
@@ -95,7 +88,7 @@ public class Main extends Application implements Runnable {
         controller.getLeftPane().getChildren().clear();
         controller.getLeftPane().getChildren().add(gameStage);
 
-        Button levelButton=new Button("NextLevel");
+        Button levelButton=new Button("Next Level");
         levelButton.setLayoutX(10);
         levelButton.setLayoutY(10);
 
@@ -108,7 +101,8 @@ public class Main extends Application implements Runnable {
 
         primary.sizeToScene();
 
-        new Thread(this, "Game Loop").start();
+        Thread thread = new Thread(this, "Game Loop");
+        thread.start();
     }
 
 

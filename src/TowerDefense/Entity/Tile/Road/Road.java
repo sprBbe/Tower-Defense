@@ -1,6 +1,7 @@
 package TowerDefense.Entity.Tile.Road;
 
 import TowerDefense.Entity.Tile.GameTile;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
 import java.io.FileInputStream;
@@ -16,4 +17,10 @@ public class Road extends GameTile {
     public Road(double x, double y) {
         super(x, y);
     }
+
+    @Override
+    public void draw(GraphicsContext gc) {
+
+    }
+
 }
