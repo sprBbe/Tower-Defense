@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox accessibleRole="BUTTON" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="447.0" prefWidth="142.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TowerDefense.Shop.ShopController">
+<VBox accessibleRole="BUTTON" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="447.0" prefWidth="142.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="TowerDefense.Shop.ShopController">
    <children>
       <Label accessibleRole="BUTTON" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" text="Store" textAlignment="JUSTIFY" textOverrun="CLIP">
          <font>
