@@ -2,15 +2,12 @@ package TowerDefense;
 
 import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.Tile.Tower.Tower;
-import javafx.event.ActionEvent;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
-import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-
 import java.util.Iterator;
 
 public class GameStage extends Canvas {

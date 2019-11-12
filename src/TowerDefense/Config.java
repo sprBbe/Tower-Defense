@@ -2,7 +2,7 @@ package TowerDefense;
 
 public final class Config {
     //Name of Game
-    public static final String GAME_NAME = "Tower Defense made by Nguyễn Trí Dũng and Bùi Cao Chinh";
+    public static final String GAME_NAME = "Tower Defense made by SprB'be and Bùi Cao Chinh";
 
     //Size of the tile, in pixel.
     public static final double TILE_SIZE = 64;
