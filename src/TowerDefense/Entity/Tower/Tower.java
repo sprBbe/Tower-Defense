@@ -1,22 +1,24 @@
-package TowerDefense.Entity.Tile.Tower;
+package TowerDefense.Entity.Tower;
 
 import TowerDefense.Config;
 import TowerDefense.Entity.Enemy.Enemy;
-import TowerDefense.Entity.Tile.GameTile;
+import TowerDefense.Entity.GameEntity;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.transform.Rotate;
 
-public abstract class Tower extends GameTile {
+public abstract class Tower extends GameEntity {
     int shotSpeed, range, damage;
     long lastShotTime;
     double rotationAngle = 0;
 
     Enemy lastEnemy;
     Image img, baseImg, blankImg;
+
     public Tower(double x, double y) {
         super(x, y);
     }
+
     public void draw(GraphicsContext gc){
         double xi = getX() - Config.TILE_SIZE / 2;
         double yi = getY() - Config.TILE_SIZE / 2;

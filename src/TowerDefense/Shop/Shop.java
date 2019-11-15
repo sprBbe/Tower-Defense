@@ -1,17 +1,14 @@
 package TowerDefense.Shop;
 
-import TowerDefense.Entity.Tile.Tower.MachineGunTower;
-import TowerDefense.Entity.Tile.Tower.NormalTower;
-import TowerDefense.Entity.Tile.Tower.SniperTower;
+import TowerDefense.Entity.Tower.MachineGunTower;
+import TowerDefense.Entity.Tower.NormalTower;
+import TowerDefense.Entity.Tower.SniperTower;
 import TowerDefense.GameStage;
 import TowerDefense.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;

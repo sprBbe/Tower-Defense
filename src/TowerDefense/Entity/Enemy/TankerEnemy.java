@@ -9,7 +9,7 @@ import java.io.FileInputStream;
 public class TankerEnemy extends Enemy {
     public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile247.png";
 
-    public TankerEnemy(int x, int y) {
+    public TankerEnemy(double x, double y) {
         super(x, y, 25, .5);
         img = new Image(IMAGE_URL);
         setDir('E');

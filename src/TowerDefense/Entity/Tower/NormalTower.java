@@ -1,4 +1,4 @@
-package TowerDefense.Entity.Tile.Tower;
+package TowerDefense.Entity.Tower;
 
 import TowerDefense.Config;
 import javafx.scene.image.Image;

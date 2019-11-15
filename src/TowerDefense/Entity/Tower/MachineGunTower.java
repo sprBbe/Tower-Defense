@@ -1,4 +1,4 @@
-package TowerDefense.Entity.Tile.Tower;
+package TowerDefense.Entity.Tower;
 
 public class MachineGunTower  extends Tower {
     public static final int PRICE = 30;

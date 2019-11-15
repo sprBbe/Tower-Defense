@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 public class NormalEnemy extends Enemy {
     public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile245.png";
 
-    public NormalEnemy(int x, int y) {
+    public NormalEnemy(double x, double y) {
         super(x, y, 5, 1);
         img = new Image(IMAGE_URL);
         setDir('E');
