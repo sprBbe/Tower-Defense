@@ -75,8 +75,19 @@ public class Main extends Application implements Runnable{
     @Override
     public void run() {
         running = true;
-        while (running == true){
-            gameStage.update();
+
+        double next_game_tick = System.currentTimeMillis();
+        int loops;
+
+        while (running) {
+            loops = 0;
+            while (System.currentTimeMillis() > next_game_tick && loops < MAX_FRAMESKIP) {
+                // This loop is to update the game. Not to draw it.
+                gameStage.update();
+                next_game_tick += SKIP_TICKS;
+                loops++;
+                CURRENT_GAME_TICK++;
+            }
         }
     }
 

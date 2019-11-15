@@ -1,29 +1,38 @@
 package TowerDefense;
 
+import TowerDefense.Entity.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
+import TowerDefense.Entity.GameEntity;
 import TowerDefense.Entity.Tower.Tower;
 import javafx.event.ActionEvent;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 
 import java.util.Iterator;
 import java.util.List;
 
+import static TowerDefense.InputHandler.collides;
+import static TowerDefense.InputHandler.handleMouseClick;
+
 public class GameStage extends Canvas {
     private GameField gameField;
     private double money;
-    private int levelNum;
+    private int levelNum,mx, my;
     private Image[] gridSet;
     private Tower selectedTower;
     private Button levelButton;
+    private boolean contained;
 
     public GameStage(int width, int height){
         super(width, height);
         this.money=50;
         this.gameField=new GameField();
         levelNum=1;
+        contained=true;
         init();
     }
 
@@ -76,6 +85,9 @@ public class GameStage extends Canvas {
     public void setMoney(double money) {
         this.money = money;
     }
+    public void buyTower(int cost) {
+        money -= cost;
+    }
 
     public double getMoney() {
         return money;
@@ -95,6 +107,22 @@ public class GameStage extends Canvas {
         gridSet[10] = new Image("file:img/Retina/towerDefense_tile209.png");
         gridSet[11] = new Image("file:img/Retina/towerDefense_tile255.png");
         gridSet[12] = new Image("file:img/Retina/towerDefense_tile253.png");
+        setOnMouseMoved((MouseEvent e) -> {
+            mx = (int) e.getX();
+            my = (int) e.getY();
+        });
+
+        setOnMouseExited((MouseEvent e) -> {
+            contained = false;
+        });
+
+        setOnMouseEntered((MouseEvent e) -> {
+            contained = true;
+        });
+
+        setOnMouseClicked((MouseEvent e) -> {
+            selectedTower = handleMouseClick(e, grid, gameField.getTowers(), selectedTower, this);
+        });
         }
 
     public void repaint() {
@@ -120,8 +148,28 @@ public class GameStage extends Canvas {
         // DRAW ENEMIES
         List<Enemy> tempEnemy = gameField.getEnemies();
         synchronized (tempEnemy) {
-            for (Enemy e : tempEnemy) {
-                e.draw(gc);
+            for (Enemy temp : tempEnemy) {
+                temp.draw(gc);
+            }
+        }
+        // DRAW BULETS
+        List<Bullet> tempBullet = gameField.getBullets();
+        synchronized (tempBullet) {
+            for (Bullet b : tempBullet) {
+                b.draw(gc);
+            }
+        }
+
+        // DRAW THE SELECTED TOWER
+        if (selectedTower != null && contained) {
+            if (grid[my / (int)Config.TILE_SIZE][mx / (int)Config.TILE_SIZE] == 0 && !collides(gameField.getTowers(), mx, my)) {
+                selectedTower.draw(gc, mx, my);
+
+                int range = selectedTower.getRange();
+                gc.setStroke(Color.RED);
+                gc.strokeOval(mx - range, my - range, range * 2, range * 2);
+            } else {
+                gc.fillOval(mx, my, 5, 5);
             }
         }
 
@@ -131,7 +179,8 @@ public class GameStage extends Canvas {
     public void update() {
         List<Tower> tempTower = gameField.getTowers();
         List<Enemy> tempEnemy = gameField.getEnemies();
-        /*for (Tower t : tempTower) {
+        List<Bullet> tempBullet = gameField.getBullets();
+        for (Tower t : tempTower) {
 
             Enemy frontEnemy = null;
 
@@ -146,12 +195,11 @@ public class GameStage extends Canvas {
             }
 
             if (frontEnemy != null && t.canFire()) {
-                bullets.add(t.fire(frontEnemy));
+                tempBullet.add(t.fire(frontEnemy));
             }
 
             t.updateAngle();
-        }*/
-
+        }
 
         synchronized (tempEnemy) {
             Iterator<Enemy> eIterator = tempEnemy.iterator();
@@ -167,6 +215,25 @@ public class GameStage extends Canvas {
                 }
 
                 e.move(route);
+            }
+        }
+
+        synchronized (tempBullet) {
+            Iterator<Bullet> bIterator = tempBullet.iterator();
+
+            while (bIterator.hasNext()) {
+                Bullet b = bIterator.next();
+
+                b.move();
+
+                if (b.collided()) {
+                    b.doDamage();
+                    bIterator.remove();
+                    b = null;
+                } else if (b.offScreen()) {
+                    bIterator.remove();
+                    b = null;
+                }
             }
         }
     }

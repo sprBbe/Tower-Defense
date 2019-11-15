@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 import java.io.FileInputStream;
 
 public class NormalEnemy extends Enemy {
-    public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile245.png";
+    public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile245.png";
 
     public NormalEnemy(double x, double y) {
         super(x, y, 5, 1);

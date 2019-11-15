@@ -11,13 +11,16 @@ public abstract class Enemy extends GameEntity {
     protected Image img;
     protected char dir;
 
+
     public Enemy(double x, double y, double health, double speed) {
         super(x, y);
         this.health = health;
         this.speed = speed;
         distance = 0;
     }
-
+    public double getDistanceTraveled() {
+        return distance;
+    }
     public void setDir(char dir) {
         this.dir = dir;
     }
@@ -40,18 +43,22 @@ public abstract class Enemy extends GameEntity {
             case 'N':
                 gx = (int)((getX() - Config.TILE_SIZE / 2) / Config.TILE_SIZE);
                 gy = (int)(getY() / Config.TILE_SIZE);
+                System.out.printf(gx +"N"+ getX()+" " + gy+" "+ getY()+"\n");
                 break;
             case 'S':
                 gx = (int)((getX() - Config.TILE_SIZE / 2) / Config.TILE_SIZE);
                 gy = (int)(getY() / Config.TILE_SIZE) - 1;
+                System.out.printf(gx +"s"+ getX()+" " + gy+" "+ getY()+"\n");
                 break;
             case 'E':
                 gx = (int)(getX() / Config.TILE_SIZE) - 1;
                 gy = (int)((getY() - Config.TILE_SIZE / 2) / Config.TILE_SIZE);
+                System.out.printf(gx +"e"+ getX()+" " + gy+" "+ getY()+"\n");
                 break;
             case 'W':
                 gx = (int)(getX() / Config.TILE_SIZE);
                 gy = (int)((getY() - Config.TILE_SIZE / 2) / Config.TILE_SIZE);
+                System.out.printf(gx +"W"+ getX()+" " + gy+" "+ getY()+"\n");
                 break;
             default:
                 gx = (int)((getX() - Config.TILE_SIZE / 2) / Config.TILE_SIZE);

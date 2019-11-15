@@ -7,7 +7,7 @@ import javafx.scene.image.Image;
 import java.io.FileInputStream;
 
 public class SmallerEnemy extends Enemy {
-    public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile248.png";
+    public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile248.png";
 
     public SmallerEnemy(double x, double y) {
         super(x, y, 5, 3);

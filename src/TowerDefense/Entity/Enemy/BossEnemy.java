@@ -7,7 +7,7 @@ import javafx.scene.image.Image;
 import java.io.FileInputStream;
 
 public class BossEnemy extends Enemy {
-    public static final String IMAGE_URL = "file:img/PNG/Retina/towerDefense_tile246.png";
+    public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile246.png";
 
     public BossEnemy(double x, double y) {
         super(x, y, 20, 2.5);
