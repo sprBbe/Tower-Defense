@@ -10,8 +10,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.io.File;
 
 public class Main extends Application implements Runnable{
     private Stage primary;
@@ -29,6 +33,15 @@ public class Main extends Application implements Runnable{
     public void start(Stage primaryStage) throws Exception{
         primary = primaryStage;
         primaryStage.setTitle(Config.GAME_NAME);
+
+        //Instantiating Media class
+        Media media = new Media(new File("img/Sounds/4OClock-RapMonsterBTSVBTS-5018271.mp3").toURI().toString());
+
+        //Instantiating MediaPlayer class
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+
+        //by setting this property to true, the audio will be played
+        mediaPlayer.setAutoPlay(true);
 
         // Load the scene from FXML
         fxmlLoader = new FXMLLoader(getClass().getResource("TowerDefense.fxml"));
