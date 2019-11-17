@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bbe add!!!">
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/GameOver/GameOver.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/GameOver/GameOver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/GameOver/GameOverController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tower/MachineGunTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tower/MachineGunTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tower/SniperTower.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Tower/SniperTower.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/InputHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/InputHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tower/MachineGunTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Tower/MachineGunTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Tower/SniperTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Tower/SniperTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TowerDefense/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,6 +75,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -101,17 +117,18 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/jhonnold/tower-defense-v2.git" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Code Java\MyGame\src\TowerDefense" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\MyGame\src\TowerDefense" />
+      <recent name="D:\GitHub\MyGame\src\TowerDefense\Shop" />
+      <recent name="D:\GitHub\MyGame\img" />
+      <recent name="D:\GitHub\MyGame\src\TowerDefense\Menu" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="TowerDefense" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\MyGame\src\TowerDefense\Shop" />
-      <recent name="D:\GitHub\MyGame\img" />
-      <recent name="D:\GitHub\MyGame\src\TowerDefense\Menu" />
-      <recent name="D:\GitHub\MyGame\src\TowerDefense" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\MyGame\src\TowerDefense\Game Over" />
+      <recent name="E:\Code Java\MyGame\src\TowerDefense" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +266,13 @@
       <workItem from="1573784838647" duration="8293000" />
       <workItem from="1573805108748" duration="3424000" />
       <workItem from="1573828848756" duration="5251000" />
-      <workItem from="1573874040808" duration="507000" />
+      <workItem from="1573874040808" duration="769000" />
+      <workItem from="1573879794077" duration="14645000" />
+      <workItem from="1573916516966" duration="599000" />
+      <workItem from="1573977191010" duration="599000" />
+      <workItem from="1573980188137" duration="4575000" />
+      <workItem from="1573988682085" duration="1499000" />
+      <workItem from="1573990373782" duration="1471000" />
     </task>
     <task id="LOCAL-00001" summary="Bbe add!!!">
       <created>1571547240870</created>
@@ -328,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573830959105</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Bbe add!!!">
+      <created>1573874755745</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573874755745</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,5 +382,21 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Bbe add!!!" />
     <option name="LAST_COMMIT_MESSAGE" value="Bbe add!!!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TowerDefense/GameStage.java</url>
+          <line>130</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TowerDefense/GameStage.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

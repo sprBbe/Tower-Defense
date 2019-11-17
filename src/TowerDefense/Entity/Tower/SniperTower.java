@@ -11,14 +11,12 @@ public class SniperTower extends Tower {
     public static final int RANGE = (int)Config.TILE_SIZE * 7;
     public static final String BASE_IMAGE_URL = "file:img/Retina/towerDefense_tile180.png";
     public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile206.png";
-    public static final String BLANK_IMAGE_URL = "file:img/Retina/towerDefense_tile229.png";
 
     public SniperTower(int x, int y) {
         super(x, y);
 
         baseImg = new Image(BASE_IMAGE_URL);
         img = new Image(IMAGE_URL);
-        blankImg = new Image(BLANK_IMAGE_URL);
 
         range = RANGE;
         damage = 5;

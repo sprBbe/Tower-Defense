@@ -2,7 +2,6 @@ package TowerDefense;
 
 import TowerDefense.Entity.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
-import TowerDefense.Entity.GameEntity;
 import TowerDefense.Entity.Tower.Tower;
 import javafx.event.ActionEvent;
 import javafx.scene.canvas.Canvas;
@@ -21,7 +20,7 @@ import static TowerDefense.InputHandler.handleMouseClick;
 public class GameStage extends Canvas {
     private GameField gameField;
     private double money;
-    private int levelNum,mx, my;
+    private int levelNum, live, mx, my;
     private Image[] gridSet;
     private Tower selectedTower;
     private Button levelButton;
@@ -30,6 +29,7 @@ public class GameStage extends Canvas {
     public GameStage(int width, int height){
         super(width, height);
         this.money=50;
+        this.live = 2;
         this.gameField=new GameField();
         levelNum=1;
         contained=true;
@@ -39,15 +39,22 @@ public class GameStage extends Canvas {
     public void setLevelButton(Button levelButton) {
         this.levelButton = levelButton;
         this.levelButton.setOnAction((ActionEvent e) -> {
-            //bullets.clear();
-            new Thread(new Level(levelNum++, this)).start();
+            //gameField.getBullets().clear();
+            Thread lv = new Thread(new Level(levelNum++, this));
+            //lv.setDaemon(true);
+            lv.start();
             this.levelButton.setVisible(false);
         });
+    }
+
+    public int getLive() {
+        return live;
     }
 
     public void onLevelDone() {
         levelButton.setVisible(true);
     }
+
     public void addEnemy(Enemy enemy) {
         gameField.addEnemy(enemy);
     }
@@ -74,17 +81,6 @@ public class GameStage extends Canvas {
             { 'E', 'X', 'X', 'N', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X' },
             { 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'E', 'X', 'X', 'X', 'X', 'X', 'X', 'X' } };
 
-    public GameField getGameField() {
-        return gameField;
-    }
-
-    public void setGameField(GameField gameField) {
-        this.gameField = gameField;
-    }
-
-    public void setMoney(double money) {
-        this.money = money;
-    }
     public void buyTower(int cost) {
         money -= cost;
     }
@@ -173,7 +169,7 @@ public class GameStage extends Canvas {
             }
         }
 
-        gc.fillText("Money: " + money, 100, 100);
+        gc.fillText("Money: " + money + "\n"+"Live: " + live , 100, 100);
     }
 
     public void update() {
@@ -206,14 +202,19 @@ public class GameStage extends Canvas {
 
             while (eIterator.hasNext()) {
                 Enemy e = eIterator.next();
-
+                //Nếu enemy chết thì cộng tiền thưởng và xoá nó
                 if (e.isDead()) {
                     eIterator.remove();
                     money += e.getReward();
                     e = null;
                     continue;
                 }
-
+                if (e.offScreen()) {
+                    eIterator.remove();
+                    live -= 1;
+                    e = null;
+                    continue;
+                }
                 e.move(route);
             }
         }

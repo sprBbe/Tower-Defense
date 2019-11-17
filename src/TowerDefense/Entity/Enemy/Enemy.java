@@ -111,4 +111,7 @@ public abstract class Enemy extends GameEntity {
         gc.restore();
     }
 
+    public boolean offScreen() {
+        return (getX() >= 16 * Config.TILE_SIZE);
+    }
 }

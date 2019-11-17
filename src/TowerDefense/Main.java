@@ -1,5 +1,6 @@
 package TowerDefense;
 
+import TowerDefense.GameOver.GameOver;
 import TowerDefense.Shop.Shop;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -16,11 +17,14 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Main extends Application implements Runnable{
     private Stage primary;
     private FXMLLoader fxmlLoader;
     private GameStage gameStage;
+    public Timeline animationLoop;
+    private Thread thread;
     private boolean running = false;
 
     // Game Loop Variables
@@ -66,13 +70,14 @@ public class Main extends Application implements Runnable{
         //---------------------
 
         // Set the frame rate to ~60 FPS
-        Timeline animationLoop = new Timeline();
+        animationLoop = new Timeline();
         animationLoop.setCycleCount(Timeline.INDEFINITE);
 
 
         KeyFrame kf = new KeyFrame(Duration.seconds(0.017), (ActionEvent event) -> {
             if (gameStage != null) {
                 gameStage.repaint();
+                if(gameStage.getLive()<=0)endGame();
             }
         });
 
@@ -87,8 +92,6 @@ public class Main extends Application implements Runnable{
 
     @Override
     public void run() {
-        running = true;
-
         double next_game_tick = System.currentTimeMillis();
         int loops;
 
@@ -104,10 +107,11 @@ public class Main extends Application implements Runnable{
         }
     }
 
-    private void startGame() {
+    public void startGame() {
+        running = true;
 
-        gameStage=new GameStage(1024,640);
-        Controller controller=fxmlLoader.getController();
+        gameStage = new GameStage(1024,640);
+        Controller controller = fxmlLoader.getController();
         controller.getLeftPane().getChildren().clear();
         controller.getLeftPane().getChildren().add(gameStage);
 
@@ -124,10 +128,20 @@ public class Main extends Application implements Runnable{
 
         primary.sizeToScene();
 
-        Thread thread = new Thread(this, "Game Loop");
+        thread = new Thread(this, "Game Loop");
         thread.start();
     }
 
+    public void endGame() {
+
+        running = false;
+        System.out.printf("Đã chạy");
+        this.animationLoop.stop();
+        Controller controller = fxmlLoader.getController();
+        controller.getRightPane().getChildren().clear();
+        new GameOver(controller.getRightPane(),gameStage, this);
+        primary.sizeToScene();
+    }
 
     public static void main(String[] args) {
         launch(args);

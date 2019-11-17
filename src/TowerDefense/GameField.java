@@ -31,6 +31,7 @@ public class GameField {
     public List<Tower> getTowers() {
         return towers;
     }
+
     public void addEnemy(Enemy enemy) {
         enemies.add(enemy);
     }
