@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bbe add!!!">
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Shop/shopstyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/menustyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/NormalEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/NormalEnemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameOver/GameOver.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameOver/GameOver.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/shop.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/TowerDefense.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/TowerDefense.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/NormalEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/NormalEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameOver/GameOver.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameOver/GameOver.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Shop/shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Shop/shop.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/TowerDefense.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/TowerDefense.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bbe add!!!" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +259,7 @@
       <workItem from="1573990373782" duration="1471000" />
       <workItem from="1573996845110" duration="52000" />
       <workItem from="1574002943849" duration="2591000" />
-      <workItem from="1574044628430" duration="5530000" />
+      <workItem from="1574044628430" duration="5589000" />
     </task>
     <task id="LOCAL-00001" summary="Bbe add!!!">
       <created>1571547240870</created>
@@ -361,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573874755745</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Bbe add!!!">
+      <created>1574050245731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1574050245732</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
