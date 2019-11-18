@@ -5,59 +5,70 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox accessibleRole="BUTTON" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="447.0" prefWidth="142.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="TowerDefense.Shop.ShopController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="142.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TowerDefense.Shop.ShopController">
    <children>
-      <Label accessibleRole="BUTTON" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" text="Store" textAlignment="JUSTIFY" textOverrun="CLIP">
-         <font>
-            <Font name="Microsoft YaHei" size="32.0" />
-         </font></Label>
-      <Button fx:id="normalTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Normal Tower" textOverrun="CLIP">
-         <font>
-            <Font size="13.0" />
-         </font>
-         <graphic>
-            <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/rscimg/NormalTower.png" />
-               </image>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="sniperTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Sniper Tower" textOverrun="CLIP">
-         <font>
-            <Font size="13.0" />
-         </font>
-         <graphic>
-            <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/rscimg/SniperTower.png" />
-               </image>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="machinegunTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="118.0" prefWidth="87.0" text="MachineGun Tower" textOverrun="CLIP">
-         <font>
-            <Font size="13.0" />
-         </font>
-         <graphic>
-            <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@/rscimg/MachineGunTower.png" />
-               </image>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </ImageView>
-         </graphic>
-      </Button>
+      <ImageView fitHeight="640.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/rscimg/backgroundyello.png" />
+         </image>
+      </ImageView>
+      <VBox accessibleRole="BUTTON" alignment="CENTER" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="447.0" prefWidth="142.0" stylesheets="@/TowerDefense/Shop/shopstyle.css">
+         <children>
+            <Label accessibleRole="BUTTON" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" text="Store" textAlignment="JUSTIFY" textOverrun="CLIP">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="normalTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Normal Tower" textOverrun="CLIP">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/rscimg/NormalTower.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="sniperTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Sniper Tower" textOverrun="CLIP">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/rscimg/SniperTower.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="machinegunTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="118.0" prefWidth="87.0" text="MachineGun Tower" textOverrun="CLIP">
+               <font>
+                  <Font name="Microsoft YaHei Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/rscimg/MachineGunTower.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</AnchorPane>

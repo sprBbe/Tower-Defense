@@ -113,6 +113,7 @@ public class Main extends Application implements Runnable{
         gameStage = new GameStage(1024,640);
         Controller controller = fxmlLoader.getController();
         controller.getLeftPane().getChildren().clear();
+        controller.getRightPane().getChildren().clear();
         controller.getLeftPane().getChildren().add(gameStage);
 
         Button levelButton=new Button("Next Level");
@@ -135,7 +136,7 @@ public class Main extends Application implements Runnable{
     public void endGame() {
 
         running = false;
-        System.out.printf("Đã chạy");
+        //System.out.printf("Đã chạy");
         this.animationLoop.stop();
         Controller controller = fxmlLoader.getController();
         controller.getRightPane().getChildren().clear();
