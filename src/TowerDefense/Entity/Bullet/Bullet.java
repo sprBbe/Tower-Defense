@@ -1,7 +1,8 @@
-package TowerDefense.Entity;
+package TowerDefense.Entity.Bullet;
 
 import TowerDefense.Config;
 import TowerDefense.Entity.Enemy.Enemy;
+import TowerDefense.Entity.GameEntity;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.transform.Rotate;
@@ -27,7 +28,7 @@ public class Bullet extends GameEntity {
         double angle = Math.atan2(dy, dx);
 
         rotationAngle = Math.toDegrees(angle) + 90;
-        img = new Image("file:img/Retina/towerDefense_tile272.png");
+        img = new Image("file:img/Retina/towerDefense_tile300.png");
     }
 
     @Override

@@ -1,7 +1,7 @@
 package TowerDefense.Entity.Tower;
 
 import TowerDefense.Config;
-import TowerDefense.Entity.Bullet;
+import TowerDefense.Entity.Bullet.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.GameEntity;
 import TowerDefense.Main;

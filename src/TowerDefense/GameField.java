@@ -1,6 +1,6 @@
 package TowerDefense;
 
-import TowerDefense.Entity.Bullet;
+import TowerDefense.Entity.Bullet.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.Tower.Tower;
 

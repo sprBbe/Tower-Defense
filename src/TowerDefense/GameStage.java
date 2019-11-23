@@ -1,6 +1,6 @@
 package TowerDefense;
 
-import TowerDefense.Entity.Bullet;
+import TowerDefense.Entity.Bullet.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
 import TowerDefense.Entity.Tower.Tower;
 import javafx.event.ActionEvent;
@@ -91,18 +91,18 @@ public class GameStage extends Canvas {
     private void init() {
         gridSet = new Image[13];
         gridSet[0] = new Image("file:img/Retina/towerDefense_tile162.png");
-        gridSet[1] = new Image("file:img/Retina/towerDefense_tile254.png");
-        gridSet[2] = new Image("file:img/Retina/towerDefense_tile230.png");
-        gridSet[3] = new Image("file:img/Retina/towerDefense_tile208.png");
-        gridSet[4] = new Image("file:img/Retina/towerDefense_tile232.png");
-        gridSet[5] = new Image("file:img/Retina/towerDefense_tile210.png");
-        gridSet[6] = new Image("file:img/Retina/towerDefense_tile211.png");
-        gridSet[7] = new Image("file:img/Retina/towerDefense_tile234.png");
-        gridSet[8] = new Image("file:img/Retina/towerDefense_tile233.png");
-        gridSet[9] = new Image("file:img/Retina/towerDefense_tile207.png");
-        gridSet[10] = new Image("file:img/Retina/towerDefense_tile209.png");
-        gridSet[11] = new Image("file:img/Retina/towerDefense_tile255.png");
-        gridSet[12] = new Image("file:img/Retina/towerDefense_tile253.png");
+        gridSet[1] = new Image("file:img/Retina/towerDefense_tile047.png");
+        gridSet[2] = new Image("file:img/Retina/towerDefense_tile023.png");
+        gridSet[3] = new Image("file:img/Retina/towerDefense_tile001.png");
+        gridSet[4] = new Image("file:img/Retina/towerDefense_tile025.png");
+        gridSet[5] = new Image("file:img/Retina/towerDefense_tile003.png");
+        gridSet[6] = new Image("file:img/Retina/towerDefense_tile004.png");
+        gridSet[7] = new Image("file:img/Retina/towerDefense_tile027.png");
+        gridSet[8] = new Image("file:img/Retina/towerDefense_tile026.png");
+        gridSet[9] = new Image("file:img/Retina/towerDefense_tile299.png");
+        gridSet[10] = new Image("file:img/Retina/towerDefense_tile002.png");
+        gridSet[11] = new Image("file:img/Retina/towerDefense_tile048.png");
+        gridSet[12] = new Image("file:img/Retina/towerDefense_tile046.png");
         setOnMouseMoved((MouseEvent e) -> {
             mx = (int) e.getX();
             my = (int) e.getY();
@@ -134,6 +134,13 @@ public class GameStage extends Canvas {
             }
         }
         // -------------------
+        // DRAW BULETS
+        List<Bullet> tempBullet = gameField.getBullets();
+        synchronized (tempBullet) {
+            for (Bullet b : tempBullet) {
+                b.draw(gc);
+            }
+        }
         // DRAW TOWERS
         List<Tower> tempTower = gameField.getTowers();
         synchronized (tempTower) {
@@ -148,13 +155,7 @@ public class GameStage extends Canvas {
                 temp.draw(gc);
             }
         }
-        // DRAW BULETS
-        List<Bullet> tempBullet = gameField.getBullets();
-        synchronized (tempBullet) {
-            for (Bullet b : tempBullet) {
-                b.draw(gc);
-            }
-        }
+
 
         // DRAW THE SELECTED TOWER
         if (selectedTower != null && contained) {
