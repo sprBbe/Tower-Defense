@@ -49,7 +49,7 @@ public class Level implements Runnable {
         double sx = -1 * Config.TILE_SIZE;
         double sy = 8 * Config.TILE_SIZE;
 
-        double count = a * Math.pow(b, (double) level + k);
+        double count = a * Math.pow(b, level + k);
 
         updateEnemyDensityMatrix();
 
@@ -61,6 +61,7 @@ public class Level implements Runnable {
                 count -= e1_strength;
             } else if (temp < enemyDensity[0] + enemyDensity[1]) {
                 gameStage.addEnemy(new SmallerEnemy(sx, sy));
+                gameStage.addEnemy(new AirPlane(0, (Math.random() * ((576 - 0) + 1)) + 0));
                 count -= e2_strength;
             } else if (temp < enemyDensity[0] + enemyDensity[1] + enemyDensity[2]) {
                 gameStage.addEnemy(new TankerEnemy(sx, sy));
