@@ -8,11 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="TowerDefense.Controller">
+<SplitPane dividerPositions="0.8" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TowerDefense.Controller">
    <items>
       <AnchorPane fx:id="leftPane">
          <children>
-            <ImageView fitHeight="640.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="640.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/rscimg/Back.png" />
+               </image></ImageView>
          </children></AnchorPane>
       <AnchorPane fx:id="rightPane">
          <children>

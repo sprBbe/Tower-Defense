@@ -37,7 +37,7 @@ public class Bullet extends GameEntity {
         double xi = getX() - Config.TILE_SIZE / 2;
         double yi = getY() - Config.TILE_SIZE / 2;
 
-        double dy = (double) Config.TILE_SIZE * .40 + Math.sin(Math.toRadians(rotationAngle + 180));
+        double dy = Config.TILE_SIZE * .40 + Math.sin(Math.toRadians(rotationAngle + 180));
 
         Rotate r;
 
