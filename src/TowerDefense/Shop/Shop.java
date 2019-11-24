@@ -5,6 +5,7 @@ import TowerDefense.Entity.Tower.NormalTower;
 import TowerDefense.Entity.Tower.SniperTower;
 import TowerDefense.GameStage;
 import TowerDefense.Main;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -50,7 +51,10 @@ public class Shop {
                     gameStage.setSelectedTower(new MachineGunTower(0, 0));
                 }
             });
-
+            controller.getExit().setOnAction((ActionEvent e) -> {
+                Platform.exit();
+                System.exit(0);
+            });
 
         } catch (IOException e) {
             e.printStackTrace();

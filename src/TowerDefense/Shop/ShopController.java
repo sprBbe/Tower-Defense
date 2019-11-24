@@ -2,6 +2,7 @@ package TowerDefense.Shop;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBase;
 
 public class ShopController {
 
@@ -13,6 +14,9 @@ public class ShopController {
 
     @FXML
     private Button machinegunTowerButton;
+
+    @FXML
+    private Button Exit;
 
     public Button getNormalTowerButton() {
         return normalTowerButton;
@@ -26,6 +30,7 @@ public class ShopController {
         return machinegunTowerButton;
     }
 
+    public ButtonBase getExit() {return Exit; }
 
     @FXML
     public void initialize() {
@@ -33,4 +38,6 @@ public class ShopController {
         assert sniperTowerButton != null : "fx:id=\"sniperTowerButton\" was null check your FXML ";
         assert machinegunTowerButton != null : "fx:id=\"machinegunTowerButton\" was null check your FXML ";
     }
+
+
 }
