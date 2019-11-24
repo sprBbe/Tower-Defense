@@ -29,6 +29,6 @@ public class NormalTower extends Tower {
         double dy = (double) Config.TILE_SIZE * .3 * Math.sin(Math.toRadians(rotationAngle - 90));
         double dx = (double) Config.TILE_SIZE * .3 * Math.cos(Math.toRadians(rotationAngle - 90));
 
-        return new Bullet(getX() + dx, getY() + dy, e);
+        return new Bullet(getX() + dx, getY() + dy, e,this.damage);
     }
 }

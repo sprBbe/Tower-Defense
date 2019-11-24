@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
 public class MachineGunTower  extends Tower {
     public static final int PRICE = 30;
     public static final int RANGE = (int)Config.TILE_SIZE * 3;
-    public static final String BASE_IMAGE_URL = "file:img/Retina/towerDefense_tile182.png";
+    public static final String BASE_IMAGE_URL = "file:img/Retina/towerDefense_tile180.png";
     public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile250.png";
 
     public MachineGunTower(int x, int y) {
@@ -29,6 +29,6 @@ public class MachineGunTower  extends Tower {
         double dy = (double) Config.TILE_SIZE * .3 * Math.sin(Math.toRadians(rotationAngle - 90));
         double dx = (double) Config.TILE_SIZE * .3 * Math.cos(Math.toRadians(rotationAngle - 90));
 
-        return new Bullet(getX() + dx, getY() + dy, e);
+        return new Bullet(getX() + dx, getY() + dy, e,this.damage);
     }
 }

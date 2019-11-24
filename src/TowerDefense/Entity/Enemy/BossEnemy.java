@@ -13,6 +13,6 @@ public class BossEnemy extends Enemy {
         super(x, y, 20, 2.5);
         img = new Image(IMAGE_URL);
         setDir('E');
-        reward = 10;
+        reward = 15;
     }
 }

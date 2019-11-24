@@ -12,6 +12,6 @@ public class NormalEnemy extends Enemy {
         super(x, y, 5, 1);
         img = new Image(IMAGE_URL);
         setDir('E');
-        reward = 1;
+        reward = 5;
     }
 }

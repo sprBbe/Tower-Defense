@@ -8,7 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.transform.Rotate;
 
 public class Bullet extends GameEntity {
-    int damage;
+    double damage;
     Enemy enemy;
 
     double speed, rotationAngle;
@@ -16,11 +16,11 @@ public class Bullet extends GameEntity {
     Image img;
     Image flames;
 
-    public Bullet(double x, double y, Enemy enemy) {
+    public Bullet(double x, double y, Enemy enemy, double damage) {
         super(x, y);
         this.enemy = enemy;
         this.speed = 4;
-        this.damage = 1;
+        this.damage = damage;
 
         double dx = enemy.getX() - getX();
         double dy = enemy.getY() - getY();

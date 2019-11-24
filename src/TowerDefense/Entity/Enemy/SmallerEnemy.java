@@ -13,6 +13,6 @@ public class SmallerEnemy extends Enemy {
         super(x, y, 5, 3);
         img = new Image(IMAGE_URL);
         setDir('E');
-        reward = 3;
+        reward = 8;
     }
 }

@@ -13,6 +13,6 @@ public class TankerEnemy extends Enemy {
         super(x, y, 25, .5);
         img = new Image(IMAGE_URL);
         setDir('E');
-        reward = 3;
+        reward = 8;
     }
 }
