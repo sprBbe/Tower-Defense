@@ -40,6 +40,7 @@ public class Level implements Runnable {
                     Thread.yield();
                 }
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
 

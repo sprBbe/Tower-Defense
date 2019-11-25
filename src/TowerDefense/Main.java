@@ -39,7 +39,7 @@ public class Main extends Application implements Runnable{
         primaryStage.setTitle(Config.GAME_NAME);
 
         //Instantiating Media class
-        Media media = new Media(new File("img/Sounds/4OClock-RapMonsterBTSVBTS-5018271.mp3").toURI().toString());
+        Media media = new Media(new File("img/Sounds/game-tower-defense.mp3").toURI().toString());
 
         //Instantiating MediaPlayer class
         MediaPlayer mediaPlayer = new MediaPlayer(media);
