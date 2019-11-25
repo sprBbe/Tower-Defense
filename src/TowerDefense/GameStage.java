@@ -134,7 +134,7 @@ public class GameStage extends Canvas {
             }
         }
         // -------------------
-        // DRAW BULETS
+        // DRAW BULLETS
         List<Bullet> tempBullet = gameField.getBullets();
         synchronized (tempBullet) {
             for (Bullet b : tempBullet) {
