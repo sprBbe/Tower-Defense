@@ -36,8 +36,7 @@ public class GameOver {
                 Platform.exit();
                 System.exit(0);
             });
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

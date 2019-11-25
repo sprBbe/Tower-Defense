@@ -7,7 +7,7 @@ import javafx.scene.image.Image;
 import java.io.FileInputStream;
 
 public class TankerEnemy extends Enemy {
-    public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile247.png";
+    public static final String IMAGE_URL = "file:img/Retina/tank_green.png";
 
     public TankerEnemy(double x, double y) {
         super(x, y, 25, .5);
