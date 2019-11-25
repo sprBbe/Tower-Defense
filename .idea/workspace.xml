@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Xóa một vài thứ">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="nhạc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -401,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574648034131</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="nhạc">
+      <created>1574650168960</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574650168960</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +434,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Bbe add!!!" />
     <MESSAGE value="Xóa một vài thứ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Xóa một vài thứ" />
+    <MESSAGE value="nhạc" />
+    <option name="LAST_COMMIT_MESSAGE" value="nhạc" />
   </component>
 </project>
