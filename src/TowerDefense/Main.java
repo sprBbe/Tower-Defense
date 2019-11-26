@@ -47,6 +47,7 @@ public class Main extends Application implements Runnable{
 
         //by setting this property to true, the audio will be played
         mediaPlayer.setAutoPlay(true);
+        mediaPlayer.setCycleCount(Integer.MAX_VALUE);
 
         // Load the scene from FXML
         fxmlLoader = new FXMLLoader(getClass().getResource("TowerDefense.fxml"));
