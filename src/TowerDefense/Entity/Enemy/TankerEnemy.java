@@ -1,7 +1,5 @@
 package TowerDefense.Entity.Enemy;
 
-
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
 import java.io.FileInputStream;

@@ -10,7 +10,7 @@ public class BossEnemy extends Enemy {
     public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile246.png";
 
     public BossEnemy(double x, double y) {
-        super(x, y, 20, 2.5);
+        super(x, y, 25, 2.5);
         img = new Image(IMAGE_URL);
         setDir('E');
         reward = 15;
