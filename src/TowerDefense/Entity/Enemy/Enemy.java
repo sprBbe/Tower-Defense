@@ -32,6 +32,7 @@ public abstract class Enemy extends GameEntity {
     public boolean isDead() {
         return health <= 0;
     }
+
     public void takeDamage(double damage) {
         health -= damage;
     }
