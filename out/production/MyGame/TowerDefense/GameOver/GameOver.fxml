@@ -8,13 +8,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="142.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TowerDefense.GameOver.GameOverController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="142.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TowerDefense.GameOver.GameOverController">
    <children>
       <ImageView fitHeight="640.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@/rscimg/backgroundyello.png" />
          </image></ImageView>
-      <Button fx:id="Replay" layoutX="33.0" layoutY="500.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="77.0" stylesheets="@/TowerDefense/menustyle.css" text="Replay">
+      <Button fx:id="Replay" layoutX="33.0" layoutY="427.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="77.0" stylesheets="@/TowerDefense/menustyle.css" text="Replay">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Microsoft YaHei Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="muteButton" layoutX="33.0" layoutY="500.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="77.0" stylesheets="@/TowerDefense/menustyle.css" text="Mute">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
