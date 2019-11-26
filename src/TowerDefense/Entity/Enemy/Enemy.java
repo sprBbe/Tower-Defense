@@ -100,7 +100,6 @@ public abstract class Enemy extends GameEntity {
     }
     @Override
     public void draw(GraphicsContext gc) {
-
         double xi = getX() - Config.TILE_SIZE / 2;
         double yi = getY() - Config.TILE_SIZE / 2;
 

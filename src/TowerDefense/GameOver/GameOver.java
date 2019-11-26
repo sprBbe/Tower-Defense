@@ -1,9 +1,7 @@
 package TowerDefense.GameOver;
 
-import TowerDefense.Controller;
 import TowerDefense.GameStage;
 import TowerDefense.Main;
-import TowerDefense.Shop.ShopController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

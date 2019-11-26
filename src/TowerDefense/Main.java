@@ -122,7 +122,7 @@ public class Main extends Application implements Runnable{
     public void startGame() {
         running = true;
 
-        gameStage = new GameStage(1024,640);
+        gameStage = new GameStage((int)Config.SCREEN_WIDTH,(int)Config.SCREEN_HEIGHT);
         Controller controller = fxmlLoader.getController();
         controller.getLeftPane().getChildren().clear();
         controller.getRightPane().getChildren().clear();

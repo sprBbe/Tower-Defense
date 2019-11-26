@@ -26,8 +26,8 @@ public class MachineGunTower  extends Tower {
         lastShotTime = Main.CURRENT_GAME_TICK;
         lastEnemy = e;
 
-        double dy = (double) Config.TILE_SIZE * .3 * Math.sin(Math.toRadians(rotationAngle - 90));
-        double dx = (double) Config.TILE_SIZE * .3 * Math.cos(Math.toRadians(rotationAngle - 90));
+        double dy = Config.TILE_SIZE * .3 * Math.sin(Math.toRadians(rotationAngle - 90));
+        double dx = Config.TILE_SIZE * .3 * Math.cos(Math.toRadians(rotationAngle - 90));
 
         return new Bullet(getX() + dx, getY() + dy, e,this.damage);
     }
