@@ -77,13 +77,4 @@ public class Shop {
             e.printStackTrace();
         }
     }
-
-    public void setGameListener(GameStage gameStage) {
-        this.gameStage = gameStage;
-    }
-
-    public void setMainListener(Main main) {
-        this.main = main;
-    }
-
 }
