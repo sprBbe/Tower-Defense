@@ -29,7 +29,7 @@ public class GameStage extends Canvas {
     public GameStage(int width, int height){
         super(width, height);
         this.money=50;
-        this.live = 200000;
+        this.live = 2;
         this.gameField=new GameField();
         levelNum=1;
         contained=true;

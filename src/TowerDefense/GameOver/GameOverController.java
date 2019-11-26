@@ -10,12 +10,19 @@ public class GameOverController {
     @FXML
     private Button Exit;
 
+    @FXML
+    private Button muteButton;
+
     public Button getReplay() {
         return Replay;
     }
 
     public Button getExit() {
         return Exit;
+    }
+
+    public Button getMuteButton() {
+        return muteButton;
     }
 
     @FXML

@@ -21,7 +21,7 @@ public class Shop {
 
     private FXMLLoader fxmlLoader;
 
-    public Shop(AnchorPane pane) {
+    public Shop(AnchorPane pane, GameStage gameStage, Main main) {
 
         try {
             fxmlLoader = new FXMLLoader(getClass().getResource("shop.fxml"));
@@ -29,6 +29,12 @@ public class Shop {
             pane.getChildren().add(root);
 
             ShopController controller = fxmlLoader.getController();
+            if (main.mediaPlayer.isMute()){
+                controller.getMuteButton().setText("Unmute");
+            }
+            else {
+                controller.getMuteButton().setText("Mute");
+            }
 
             Button normalTower = controller.getNormalTowerButton();
             Button sniperTower = controller.getSniperTowerButton();
@@ -49,6 +55,17 @@ public class Shop {
             machinegunTower.setOnAction((ActionEvent e) -> {
                 if (gameStage.getMoney() >= MachineGunTower.PRICE) {
                     gameStage.setSelectedTower(new MachineGunTower(0, 0));
+                }
+            });
+
+            controller.getMuteButton().setOnAction((ActionEvent e) -> {
+                if (main.mediaPlayer.isMute()){
+                    main.mediaPlayer.setMute(false);
+                    controller.getMuteButton().setText("Mute");
+                }
+                else {
+                    main.mediaPlayer.setMute(true);
+                    controller.getMuteButton().setText("Unmute");
                 }
             });
             controller.getExit().setOnAction((ActionEvent e) -> {

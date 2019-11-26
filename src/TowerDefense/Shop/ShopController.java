@@ -18,6 +18,9 @@ public class ShopController {
     @FXML
     private Button Exit;
 
+    @FXML
+    private Button muteButton;
+
     public Button getNormalTowerButton() {
         return normalTowerButton;
     }
@@ -31,6 +34,10 @@ public class ShopController {
     }
 
     public ButtonBase getExit() {return Exit; }
+
+    public Button getMuteButton() {
+        return muteButton;
+    }
 
     @FXML
     public void initialize() {

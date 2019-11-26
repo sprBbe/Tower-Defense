@@ -25,6 +25,7 @@ public class Main extends Application implements Runnable{
     private GameStage gameStage;
     public Timeline animationLoop;
     private Thread thread;
+    public MediaPlayer mediaPlayer;
     private boolean running = false;
 
     // Game Loop Variables
@@ -42,7 +43,7 @@ public class Main extends Application implements Runnable{
         Media media = new Media(new File("img/Sounds/game-tower-defense.mp3").toURI().toString());
 
         //Instantiating MediaPlayer class
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer = new MediaPlayer(media);
 
         //by setting this property to true, the audio will be played
         mediaPlayer.setAutoPlay(true);
@@ -66,6 +67,17 @@ public class Main extends Application implements Runnable{
         controller.getQuitButton().setOnAction((ActionEvent e) -> {
             Platform.exit();
             System.exit(0);
+        });
+
+        controller.getMuteButton().setOnAction((ActionEvent e) -> {
+            if (mediaPlayer.isMute()){
+                mediaPlayer.setMute(false);
+                controller.getMuteButton().setText("Mute");
+            }
+            else {
+                mediaPlayer.setMute(true);
+                controller.getMuteButton().setText("Unmute");
+            }
         });
         //---------------------
 
@@ -123,9 +135,7 @@ public class Main extends Application implements Runnable{
         controller.getLeftPane().getChildren().add(levelButton);
         gameStage.setLevelButton(levelButton);
 
-        Shop shop = new Shop(controller.getRightPane());
-        shop.setGameListener(gameStage);
-        shop.setMainListener(this);
+        Shop shop = new Shop(controller.getRightPane(), gameStage,this);
 
         primary.sizeToScene();
 

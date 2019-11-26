@@ -26,6 +26,12 @@ public class GameOver {
             pane.getChildren().add(root);
 
             GameOverController controller = fxmlLoader.getController();
+            if (main.mediaPlayer.isMute()){
+                controller.getMuteButton().setText("Unmute");
+            }
+            else {
+                controller.getMuteButton().setText("Mute");
+            }
             //Controller controller = fxmlLoader.getController();
             controller.getReplay().setOnAction((ActionEvent e) -> {
                 main.animationLoop.play();
@@ -35,6 +41,16 @@ public class GameOver {
             controller.getExit().setOnAction((ActionEvent e) -> {
                 Platform.exit();
                 System.exit(0);
+            });
+            controller.getMuteButton().setOnAction((ActionEvent e) -> {
+                if (main.mediaPlayer.isMute()){
+                    main.mediaPlayer.setMute(false);
+                    controller.getMuteButton().setText("Mute");
+                }
+                else {
+                    main.mediaPlayer.setMute(true);
+                    controller.getMuteButton().setText("Unmute");
+                }
             });
         } catch (IOException e) {
             e.printStackTrace();

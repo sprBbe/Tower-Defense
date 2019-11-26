@@ -28,6 +28,13 @@ public class Controller {
     @FXML
     private Button quitButton;
 
+    @FXML
+    private Button muteButton;
+
+    public Button getMuteButton() {
+        return muteButton;
+    }
+
     public Button getStartButton() {
         return startButton;
     }
