@@ -18,10 +18,9 @@ public class Level implements Runnable {
         double count = level * 10;
 
         while (count >= 0) {
-            if (count >= 75) {
+            if (count >= 100) {
                 gameStage.addEnemy(new AirBus(0, (Math.random() * ((Config.TILE_SIZE*9 - 0) + 1)) + 0));
-                gameStage.addEnemy(new AirPlane(0, (Math.random() * ((Config.TILE_SIZE*9 - 0) + 1)) + 0));
-                count -= 70;
+                count -= 100;
             } else if (count >= 60) {
                 gameStage.addEnemy(new Tank(sx, sy));
                 count -= 60;

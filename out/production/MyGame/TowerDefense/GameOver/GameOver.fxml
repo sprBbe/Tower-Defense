@@ -38,9 +38,9 @@
             <Font name="Microsoft YaHei Bold" size="16.0" />
          </font>
       </Button>
-      <Text fill="RED" layoutX="16.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GameOver" textAlignment="CENTER" wrappingWidth="111.0">
+      <Text fill="RED" layoutX="11.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Over" textAlignment="CENTER" wrappingWidth="120.0">
          <font>
-            <Font name="Microsoft YaHei" size="36.0" />
+            <Font name="Lucida Console" size="36.0" />
          </font>
       </Text>
    </children>

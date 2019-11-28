@@ -46,7 +46,7 @@ public class Main extends Application implements Runnable{
         mediaPlayer = new MediaPlayer(media);
 
         //by setting this property to true, the audio will be played
-        mediaPlayer.setAutoPlay(true);
+        mediaPlayer.play();
         mediaPlayer.setCycleCount(Integer.MAX_VALUE);
 
         // Load the scene from FXML
