@@ -25,6 +25,9 @@
                </font>
             </Label>
             <Button fx:id="normalTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Normal Tower" textOverrun="CLIP">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                <font>
                   <Font name="Microsoft YaHei Bold" size="13.0" />
                </font>
@@ -40,6 +43,9 @@
                </graphic>
             </Button>
             <Button fx:id="sniperTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" text="Sniper Tower" textOverrun="CLIP">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                <font>
                   <Font name="Microsoft YaHei Bold" size="13.0" />
                </font>
@@ -55,6 +61,9 @@
                </graphic>
             </Button>
             <Button fx:id="machinegunTowerButton" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="118.0" prefWidth="87.0" text="MachineGun Tower" textOverrun="CLIP">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
                <font>
                   <Font name="Microsoft YaHei Bold" size="13.0" />
                </font>

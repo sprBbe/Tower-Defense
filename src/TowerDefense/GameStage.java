@@ -10,6 +10,9 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontSmoothingType;
+import javafx.scene.text.FontWeight;
 
 import java.util.Iterator;
 import java.util.List;
@@ -174,6 +177,9 @@ public class GameStage extends Canvas {
             }
         }
 
+        gc.setFont(Font.font("Microsoft YaHei", FontWeight.EXTRA_BOLD, 14));
+        gc.setFontSmoothingType(FontSmoothingType.LCD);
+        gc.setFill(Color.web("#362c00",1.0));
         gc.fillText("Money: " + money + "\n"+"Live: " + live , 100, 100);
     }
 
