@@ -12,17 +12,22 @@ public class Level implements Runnable {
     }
 
     public void run() {
-        double sx = 0 * Config.TILE_SIZE;
+        double sx = 0;
         double sy = 8 * Config.TILE_SIZE;
+        double syplane = Config.TILE_SIZE*9;
+
 
         double count = level * 10;
 
         while (count >= 0) {
-            if (count >= 100) {
-                gameStage.addEnemy(new AirBus(0, (Math.random() * ((Config.TILE_SIZE*9 - 0) + 1)) + 0));
+            if(count >= 250){
+                gameStage.addEnemy(new WhiteTank(sx, sy));
+                count -= 250;
+            } else if (count >= 100) {
+                gameStage.addEnemy(new AirBus(0, (Math.random() * ((syplane - 0) + 1)) + 0));
                 count -= 100;
             } else if (count >= 60) {
-                gameStage.addEnemy(new Tank(sx, sy));
+                gameStage.addEnemy(new GreenTank(sx, sy));
                 count -= 60;
             } else if (count >= 35){
                 gameStage.addEnemy(new AirPlane(0, (Math.random() * ((Config.TILE_SIZE*9 - 0) + 1)) + 0));

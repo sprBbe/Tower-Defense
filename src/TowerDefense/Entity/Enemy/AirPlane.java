@@ -13,7 +13,7 @@ public class AirPlane extends Enemy {
     double gy;
 
     public AirPlane(double x, double y) {
-        super(x, y, 20, 1.5);
+        super(x, y, 40, 1.5);
         img = new Image(IMAGE_URL);
         shadow = new Image(IMAGE_SHADOW);
         reward = 20;
