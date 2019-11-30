@@ -8,11 +8,16 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -127,13 +132,22 @@ public class Main extends Application implements Runnable{
         Controller controller = fxmlLoader.getController();
         controller.getLeftPane().getChildren().clear();
         controller.getRightPane().getChildren().clear();
+        controller.getLeftPane().getStylesheets().add(getClass().getResource("menustyle.css").toExternalForm());
         controller.getLeftPane().getChildren().add(gameStage);
 
         Button levelButton=new Button("Next Level");
         levelButton.setLayoutX(10);
         levelButton.setLayoutY(10);
+        levelButton.setFont(Font.font("Microsoft YaHei", FontWeight.EXTRA_BOLD, 16));
+        levelButton.setStyle("-fx-text-fill: #362c00");
+        levelButton.setCursor(Cursor.HAND);
 
-        controller.getLeftPane().getChildren().add(levelButton);
+        /*ProgressBar progressBar = new ProgressBar();
+        progressBar.setLayoutX(200);
+        progressBar.setLayoutY(200);
+        progressBar.setProgress(gameStage.getLive());*/
+
+        controller.getLeftPane().getChildren().addAll(levelButton/*,progressBar*/);
         gameStage.setLevelButton(levelButton);
 
         Shop shop = new Shop(controller.getRightPane(), gameStage,this);
