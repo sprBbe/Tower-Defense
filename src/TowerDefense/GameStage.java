@@ -113,21 +113,19 @@ public class GameStage extends Canvas {
         gridSet[10] = new Image("file:img/Retina/towerDefense_tile002.png");
         gridSet[11] = new Image("file:img/Retina/towerDefense_tile048.png");
         gridSet[12] = new Image("file:img/Retina/towerDefense_tile046.png");
-
         //1024 * 640
-        gameField.getTiles().add(new Rock(180,176));
+        gameField.getTiles().add(new Rock(150,176));
         gameField.getTiles().add(new StarBush(594, 225));
         gameField.getTiles().add(new Rock(350,451));
         gameField.getTiles().add(new Bush(912,57));
-        gameField.getTiles().add(new SmallRock(814,515));
-        gameField.getTiles().add(new Bush(877,300));
-        gameField.getTiles().add(new Rock(435,612));
-        gameField.getTiles().add(new Bush(923,446));
-        gameField.getTiles().add(new SmallBush(149,419));
-        gameField.getTiles().add(new Clover(217,573));
-        gameField.getTiles().add(new MediumRock(57,341));
-        gameField.getTiles().add(new CircleBush(653,438));
-
+        gameField.getTiles().add(new SmallRock(814,495));
+        gameField.getTiles().add(new Bush(800,370));
+        gameField.getTiles().add(new Rock(420,612));
+        gameField.getTiles().add(new Bush(65,410));
+        gameField.getTiles().add(new Clover(790,130));
+        gameField.getTiles().add(new MediumRock(360,220));
+        gameField.getTiles().add(new CircleBush(980,440));
+        gameField.getTiles().add(new SmallBush(580,50));
         setOnMouseMoved((MouseEvent e) -> {
             mx = (int) e.getX();
             my = (int) e.getY();

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Fix next level button!">
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/CircleBush.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Clover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/MediumRock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallBush.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Add whitetank">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Bush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Bush.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/CircleBush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/CircleBush.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Clover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Clover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/SmallBush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/SmallBush.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/StarBush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/StarBush.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Bush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Bush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/CircleBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/CircleBush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Clover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Clover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallBush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/StarBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/StarBush.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,7 +302,7 @@
       <workItem from="1574954138565" duration="5081000" />
       <workItem from="1574998373275" duration="2800000" />
       <workItem from="1575029648151" duration="5376000" />
-      <workItem from="1575104665887" duration="1826000" />
+      <workItem from="1575104665887" duration="5076000" />
     </task>
     <task id="LOCAL-00001" summary="Bbe add!!!">
       <created>1571547240870</created>
@@ -452,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575104898517</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add whitetank">
+      <created>1575106527995</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1575106527995</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,6 +493,7 @@
     <MESSAGE value="Bbe" />
     <MESSAGE value="Bbe fixes Cursor in Shop.fxml and fix AirBus in class Level!" />
     <MESSAGE value="Fix next level button!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix next level button!" />
+    <MESSAGE value="Add whitetank" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add whitetank" />
   </component>
 </project>
