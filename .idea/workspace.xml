@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Bbe fixes Cursor in Shop.fxml and fix AirBus in class Level!">
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Bush.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/GameTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Rock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallRock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/StarBush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/GameStage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Shop/shop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +102,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tower-defense-v2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />

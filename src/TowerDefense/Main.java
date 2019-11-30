@@ -145,9 +145,7 @@ public class Main extends Application implements Runnable{
     }
 
     public void endGame() {
-
         running = false;
-        //System.out.printf("Đã chạy");
         this.animationLoop.stop();
         Controller controller = fxmlLoader.getController();
         controller.getRightPane().getChildren().clear();
@@ -158,6 +156,4 @@ public class Main extends Application implements Runnable{
     public static void main(String[] args) {
         launch(args);
     }
-
-
 }

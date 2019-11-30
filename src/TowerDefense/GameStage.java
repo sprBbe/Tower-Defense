@@ -2,6 +2,7 @@ package TowerDefense;
 
 import TowerDefense.Entity.Bullet.Bullet;
 import TowerDefense.Entity.Enemy.Enemy;
+import TowerDefense.Entity.GameTile.*;
 import TowerDefense.Entity.Tower.Tower;
 import javafx.event.ActionEvent;
 import javafx.scene.canvas.Canvas;
@@ -14,6 +15,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontSmoothingType;
 import javafx.scene.text.FontWeight;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -66,7 +68,8 @@ public class GameStage extends Canvas {
         this.selectedTower = selectedTower;
     }
 
-    private final int[][] grid = new int[][] {{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+    private final int[][] grid = new int[][] {
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
             { 0, 0, 0, 5, 1, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0 },
             { 0, 0, 0, 4, 9, 3, 3, 3, 3, 3, 10, 2, 0, 0, 0, 0 },
             { 0, 0, 0, 4, 2, 0, 0, 0, 0, 0, 4, 2, 0, 0, 0, 0 },
@@ -126,7 +129,17 @@ public class GameStage extends Canvas {
         setOnMouseClicked((MouseEvent e) -> {
             selectedTower = handleMouseClick(e, grid, gameField.getTowers(), selectedTower, this);
         });
+        //1024 * 640
+        gameField.getTiles().add(new Rock(180,176));
+        gameField.getTiles().add(new StarBush(594, 225));
+        gameField.getTiles().add(new Rock(350,451));
+        gameField.getTiles().add(new Bush(912,57));
+        gameField.getTiles().add(new SmallRock(814,515));
+        gameField.getTiles().add(new Bush(877,300));
+        gameField.getTiles().add(new Rock(435,612));
+        gameField.getTiles().add(new Bush(923,446));
         }
+
 
     public void repaint() {
         GraphicsContext gc = getGraphicsContext2D();
@@ -140,7 +153,15 @@ public class GameStage extends Canvas {
                 gc.drawImage(gridSet[grid[j][i]], i * Config.TILE_SIZE, j * Config.TILE_SIZE, Config.TILE_SIZE, Config.TILE_SIZE);
             }
         }
+
         // -------------------
+
+        // DRAW GAME TILES
+        List<GameTile> tileList = gameField.getTiles();
+        for (GameTile tile : tileList) {
+            tile.draw(gc);
+        }
+
         // DRAW BULLETS
         List<Bullet> tempBullet = gameField.getBullets();
         synchronized (tempBullet) {
