@@ -2,6 +2,7 @@ package TowerDefense.GameOver;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
 public class GameOverController {
     @FXML
@@ -13,6 +14,9 @@ public class GameOverController {
     @FXML
     private Button muteButton;
 
+    @FXML
+    private Text HighestLevel;
+
     public Button getReplay() {
         return Replay;
     }
@@ -23,6 +27,10 @@ public class GameOverController {
 
     public Button getMuteButton() {
         return muteButton;
+    }
+
+    public Text getHighestLevel() {
+        return HighestLevel;
     }
 
     @FXML

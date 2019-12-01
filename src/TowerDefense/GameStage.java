@@ -52,6 +52,10 @@ public class GameStage extends Canvas {
         });
     }
 
+    public int getLevelNum() {
+        return levelNum;
+    }
+
     public int getLive() {
         return live;
     }
