@@ -43,5 +43,10 @@
             <Font name="Lucida Console" size="36.0" />
          </font>
       </Text>
+      <Text fx:id="HighestLevel" fill="#362c00" fontSmoothingType="LCD" layoutX="11.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Level:">
+         <font>
+            <Font name="Microsoft YaHei Bold" size="14.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
