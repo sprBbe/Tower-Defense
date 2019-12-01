@@ -7,5 +7,6 @@ public class SmallRock extends GameTile {
     public SmallRock(double x, double y) {
         super(x, y);
         img = new Image(IMAGE_URL);
+        rotationAngle = (Math.random() * ((360 - 0) + 1)) + 0;
     }
 }

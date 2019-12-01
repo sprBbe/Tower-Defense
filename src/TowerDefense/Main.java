@@ -44,13 +44,8 @@ public class Main extends Application implements Runnable{
         primary = primaryStage;
         primaryStage.setTitle(Config.GAME_NAME);
 
-        //Instantiating Media class
         Media media = new Media(new File("img/Sounds/game-tower-defense.mp3").toURI().toString());
-
-        //Instantiating MediaPlayer class
         mediaPlayer = new MediaPlayer(media);
-
-        //by setting this property to true, the audio will be played
         mediaPlayer.play();
         mediaPlayer.setCycleCount(Integer.MAX_VALUE);
 
