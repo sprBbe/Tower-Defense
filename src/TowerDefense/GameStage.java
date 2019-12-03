@@ -126,11 +126,11 @@ public class GameStage extends Canvas {
         gameField.getTiles().add(new Rock(115,252,0));
         gameField.getTiles().add(new Clover(75,220,300));
         //Bụi cây
-        gameField.getTiles().add(new CircleBush(345,450,0));
-        gameField.getTiles().add(new Bush(375,415,30));
-        gameField.getTiles().add(new Bush(345,370,45));
-        gameField.getTiles().add(new SmallBush(335,410,0));
-        gameField.getTiles().add(new StarBush(345, 450,25));
+        gameField.getTiles().add(new CircleBush(345,440,0));
+        gameField.getTiles().add(new Bush(390,382,30));
+        gameField.getTiles().add(new Bush(345,320,45));
+        gameField.getTiles().add(new SmallBush(335,380,0));
+        gameField.getTiles().add(new StarBush(345, 440,25));
         //
         gameField.getTiles().add(new Bush(800,370,0));
         setOnMouseMoved((MouseEvent e) -> {
