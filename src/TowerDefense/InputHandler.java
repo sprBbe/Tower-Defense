@@ -1,6 +1,7 @@
 package TowerDefense;
 
 import TowerDefense.Entity.GameEntity;
+import TowerDefense.Entity.GameTile.GameTile;
 import TowerDefense.Entity.Tower.MachineGunTower;
 import TowerDefense.Entity.Tower.NormalTower;
 import TowerDefense.Entity.Tower.SniperTower;
@@ -11,7 +12,7 @@ import java.util.List;
 
 public class InputHandler {
 
-	public static Tower handleMouseClick(MouseEvent e, int[][] grid, List<Tower> towers, Tower selectedTower, GameStage gameStage) {
+	public static Tower handleMouseClick(MouseEvent e, int[][] grid, List<Tower> towers, List<GameTile> tiles, Tower selectedTower, GameStage gameStage) {
 		if (selectedTower == null) {
 			return null;
 		}
@@ -19,7 +20,7 @@ public class InputHandler {
 		int mx = (int) e.getX();
 		int my = (int) e.getY();
 		
-		if (grid[my / (int)Config.TILE_SIZE][mx / (int)Config.TILE_SIZE] == 0 && !collides(towers, mx, my)) {
+		if (grid[my / (int)Config.TILE_SIZE][mx / (int)Config.TILE_SIZE] == 0 && !collides(towers, tiles, mx, my)) {
 			if (selectedTower instanceof NormalTower) {
 				gameStage.buyTower(NormalTower.PRICE);
 				towers.add(new NormalTower(mx, my));
@@ -38,10 +39,16 @@ public class InputHandler {
 		return selectedTower;
 	}
 
-	public static boolean collides(Iterable<Tower> list, int mx, int my) {
+	public static boolean collides(Iterable<Tower> list,Iterable<GameTile> tiles, int mx, int my) {
 
 		for (GameEntity entity : list) {
 			if (entity.distance(mx, my) < Config.TILE_SIZE * .6) {
+				return true;
+			}
+		}
+
+		for (GameEntity tile : tiles) {
+			if(tile.distance(mx, my) < Config.TILE_SIZE * .6) {
 				return true;
 			}
 		}

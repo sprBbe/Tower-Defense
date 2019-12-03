@@ -144,7 +144,7 @@ public class GameStage extends Canvas {
         });
 
         setOnMouseClicked((MouseEvent e) -> {
-            selectedTower = handleMouseClick(e, grid, gameField.getTowers(), selectedTower, this);
+            selectedTower = handleMouseClick(e, grid, gameField.getTowers(), gameField.getTiles(), selectedTower, this);
         });
     }
 
@@ -195,7 +195,7 @@ public class GameStage extends Canvas {
 
         // DRAW THE SELECTED TOWER
         if (selectedTower != null && contained) {
-            if (grid[my / (int)Config.TILE_SIZE][mx / (int)Config.TILE_SIZE] == 0 && !collides(gameField.getTowers(), mx, my)) {
+            if (grid[my / (int)Config.TILE_SIZE][mx / (int)Config.TILE_SIZE] == 0 && !collides(gameField.getTowers(), gameField.getTiles(), mx, my)) {
                 selectedTower.draw(gc, mx, my);
 
                 int range = selectedTower.getRange();
