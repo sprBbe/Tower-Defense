@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add highest">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/AirBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/AirBus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/WhiteTank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/Enemy/WhiteTank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Bush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/Bush.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/CircleBush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/CircleBush.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/StarBush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyGame/TowerDefense/Entity/GameTile/StarBush.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/AirBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/AirBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/WhiteTank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/Enemy/WhiteTank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Bush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Bush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/CircleBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/CircleBush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Clover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Clover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/MediumRock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/MediumRock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/Rock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallBush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallRock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/SmallRock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/StarBush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/Entity/GameTile/StarBush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TowerDefense/GameStage.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add highest" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +293,7 @@
       <workItem from="1575188754913" duration="7078000" />
       <workItem from="1575341315021" duration="461000" />
       <workItem from="1575348077579" duration="2383000" />
-      <workItem from="1575362016280" duration="3965000" />
+      <workItem from="1575362016280" duration="4020000" />
     </task>
     <task id="LOCAL-00001" summary="Bbe add!!!">
       <created>1571547240870</created>
@@ -489,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575197594971</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add highest">
+      <created>1575366131274</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1575366131275</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
