@@ -41,7 +41,7 @@ public class InputHandler {
 	public static boolean collides(Iterable<Tower> list, int mx, int my) {
 
 		for (GameEntity entity : list) {
-			if (entity.distance(mx, my) < (double) Config.TILE_SIZE * .6) {
+			if (entity.distance(mx, my) < Config.TILE_SIZE * .6) {
 				return true;
 			}
 		}
