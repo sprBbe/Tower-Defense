@@ -31,6 +31,9 @@ public class Controller {
     @FXML
     private Button muteButton;
 
+    @FXML
+    private Button Tutorial;
+
     public Button getMuteButton() {
         return muteButton;
     }
@@ -41,6 +44,10 @@ public class Controller {
 
     public Button getQuitButton() {
         return quitButton;
+    }
+
+    public Button getTutorial() {
+        return Tutorial;
     }
 
     @FXML

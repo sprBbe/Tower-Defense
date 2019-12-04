@@ -80,7 +80,7 @@
             </Button>
          </children>
       </VBox>
-      <Button fx:id="Exit" layoutX="33.0" layoutY="573.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="77.0" stylesheets="@/TowerDefense/menustyle.css" text="Quit">
+      <Button fx:id="Exit" layoutX="20.0" layoutY="573.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="102.0" stylesheets="@/TowerDefense/menustyle.css" text="Quit">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -88,7 +88,7 @@
             <Font name="Microsoft YaHei Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="muteButton" layoutX="33.0" layoutY="500.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="77.0" stylesheets="@/TowerDefense/menustyle.css" text="Mute">
+      <Button fx:id="muteButton" layoutX="20.0" layoutY="500.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="102.0" stylesheets="@/TowerDefense/menustyle.css" text="Mute">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

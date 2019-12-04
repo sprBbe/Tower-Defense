@@ -11,14 +11,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ProgressBar;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 import java.io.File;
@@ -32,7 +35,7 @@ public class Main extends Application implements Runnable{
     private Thread thread;
     public MediaPlayer mediaPlayer;
     private boolean running = false;
-
+    boolean temp=false;
     // Game Loop Variables
     private final int TICKS_PER_SECOND = 100;
     private final int SKIP_TICKS = 1000 / TICKS_PER_SECOND;
@@ -78,6 +81,27 @@ public class Main extends Application implements Runnable{
             else {
                 mediaPlayer.setMute(true);
                 controller.getMuteButton().setText("Unmute");
+            }
+        });
+        controller.getTutorial().setOnAction((ActionEvent e) -> {
+            if(temp == false){
+                temp = true;
+                FXMLLoader tutorial = new FXMLLoader(getClass().getResource("Tutorial.fxml"));
+                Parent prt = null;
+                try {
+                    prt = tutorial.load();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                controller.getLeftPane().getChildren().clear();
+                controller.getLeftPane().getChildren().add(prt);
+            }
+            else{
+                temp = false;
+                Image img= new Image("file:img/rscimg/Back.png");
+                ImageView back = new ImageView(img);
+                controller.getLeftPane().getChildren().clear();
+                controller.getLeftPane().getChildren().add(back);
             }
         });
         //---------------------
@@ -137,12 +161,7 @@ public class Main extends Application implements Runnable{
         levelButton.setStyle("-fx-text-fill: #362c00");
         levelButton.setCursor(Cursor.HAND);
 
-        /*ProgressBar progressBar = new ProgressBar();
-        progressBar.setLayoutX(200);
-        progressBar.setLayoutY(200);
-        progressBar.setProgress(gameStage.getLive());*/
-
-        controller.getLeftPane().getChildren().addAll(levelButton/*,progressBar*/);
+        controller.getLeftPane().getChildren().add(levelButton);
         gameStage.setLevelButton(levelButton);
 
         Shop shop = new Shop(controller.getRightPane(), gameStage,this);
