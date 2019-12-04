@@ -212,7 +212,7 @@ public class GameStage extends Canvas {
         gc.setFont(Font.font("Microsoft YaHei", FontWeight.EXTRA_BOLD, 16));
         gc.setFontSmoothingType(FontSmoothingType.LCD);
         gc.setFill(Color.web("#362c00"));
-        gc.fillText("Money: " + money +"\t"+"Live: " + live, 800, 30);
+        gc.fillText("Money: " + money +"$\t\t"+"Live: " + live+"❤", 700, 30);
     }
 
     public void update() {
