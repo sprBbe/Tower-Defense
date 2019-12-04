@@ -7,7 +7,7 @@ import TowerDefense.Main;
 import javafx.scene.image.Image;
 
 public class MachineGunTower  extends Tower {
-    public static final int PRICE = 30;
+    public static final int PRICE = 40;
     public static final int RANGE = (int)Config.TILE_SIZE * 3;
     public static final String BASE_IMAGE_URL = "file:img/Retina/towerDefense_tile180.png";
     public static final String IMAGE_URL = "file:img/Retina/towerDefense_tile250.png";
