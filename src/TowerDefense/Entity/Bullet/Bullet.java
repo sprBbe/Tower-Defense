@@ -14,7 +14,6 @@ public class Bullet extends GameEntity {
     double speed, rotationAngle;
 
     Image img;
-    Image flames;
 
     public Bullet(double x, double y, Enemy enemy, double damage) {
         super(x, y);
@@ -36,19 +35,8 @@ public class Bullet extends GameEntity {
 
         double xi = getX() - Config.TILE_SIZE / 2;
         double yi = getY() - Config.TILE_SIZE / 2;
-
         double dy = Config.TILE_SIZE * .40 + Math.sin(Math.toRadians(rotationAngle + 180));
-
         Rotate r;
-
-        if (flames != null) {
-            r = new Rotate(rotationAngle + 180, getX(), getY());
-            gc.save();
-            gc.setTransform(r.getMxx(), r.getMyx(), r.getMxy(), r.getMyy(), r.getTx(), r.getTy());
-            gc.drawImage(flames, xi, yi - dy, Config.TILE_SIZE, Config.TILE_SIZE);
-            gc.restore();
-        }
-
         r = new Rotate(rotationAngle, getX(), getY());
         gc.save();
         gc.setTransform(r.getMxx(), r.getMyx(), r.getMxy(), r.getMyy(), r.getTx(), r.getTy());
@@ -82,11 +70,9 @@ public class Bullet extends GameEntity {
     }
 
     public boolean collided() {
-
         if (enemy.isDead()) {
             return false;
         }
-
         return distance(enemy) <= 5;
     }
 
