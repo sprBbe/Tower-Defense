@@ -56,6 +56,7 @@ public class Main extends Application implements Runnable{
         fxmlLoader = new FXMLLoader(getClass().getResource("TowerDefense.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
+        primaryStage.getIcons().add(new Image("file:img/rscimg/logo1.png"));
         primaryStage.setScene(scene);
         primaryStage.setOnCloseRequest(e -> {
             Platform.exit();
